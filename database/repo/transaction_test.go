@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ivxivx/go-practices/internal/domain/transaction"
-	"github.com/ivxivx/go-practices/internal/util"
+	"github.com/ivxivx/go-practices/domain/transaction"
+	"github.com/ivxivx/go-practices/util"
 )
 
 func Test_Transaction(t *testing.T) {

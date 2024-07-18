@@ -9,7 +9,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/ivxivx/go-practices/internal/domain/transaction"
+	"github.com/ivxivx/go-practices/domain/transaction"
 )
 
 type Repo interface {

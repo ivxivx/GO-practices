@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/induzo/gocom/database/pginit/v2"
-	"github.com/ivxivx/go-practices/internal/database"
+	"github.com/ivxivx/go-practices/database"
 	gonanoid "github.com/matoous/go-nanoid/v2"
 	"github.com/ory/dockertest/v3"
 	"github.com/ory/dockertest/v3/docker"
