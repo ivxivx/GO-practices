@@ -1,4 +1,4 @@
-package times
+package time
 
 import (
 	"testing"

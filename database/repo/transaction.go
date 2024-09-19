@@ -9,8 +9,8 @@ import (
 	"github.com/induzo/gocom/database/pginit/v2"
 	"github.com/jackc/pgx/v5"
 
-	"github.com/ivxivx/go-practices/domain"
-	"github.com/ivxivx/go-practices/domain/transaction"
+	"github.com/ivxivx/go-practices/database/domain"
+	"github.com/ivxivx/go-practices/database/domain/transaction"
 )
 
 func (r *Repository) CreateTransaction(

@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ivxivx/go-practices/domain/transaction"
+	"github.com/ivxivx/go-practices/database/domain/transaction"
 	"github.com/ivxivx/go-practices/util"
 )
 

@@ -1,6 +1,6 @@
 module github.com/ivxivx/go-practices
 
-go 1.22.4
+go 1.22.5
 
 require (
 	github.com/goccy/go-json v0.10.3
@@ -39,6 +39,7 @@ require (
 	github.com/jackc/pgx-gofrs-uuid v0.0.0-20230224015001-1d428863c2e2 // indirect
 	github.com/jackc/pgx-shopspring-decimal v0.0.0-20220624020537-1d36b5a1853e // indirect
 	github.com/jackc/puddle/v2 v2.2.1 // indirect
+	github.com/jszwec/csvutil v1.10.0 // indirect
 	github.com/lib/pq v1.10.9 // indirect
 	github.com/matoous/go-nanoid/v2 v2.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
