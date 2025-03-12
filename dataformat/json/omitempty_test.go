@@ -11,7 +11,7 @@ func Test_Omitempty_Nil(t *testing.T) {
 	t.Parallel()
 
 	record := Record{
-		ID:          "id1",
+		Currency:    "",
 		Description: nil,
 	}
 
@@ -20,7 +20,7 @@ func Test_Omitempty_Nil(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	expected := `{"id":"id1","amount":"0","currency":""}`
+	expected := `{"id":"","amount":"0","label":null}`
 	actual := string(marshaled)
 
 	if actual != expected {
@@ -32,7 +32,7 @@ func Test_Omitempty_Empty(t *testing.T) {
 	t.Parallel()
 
 	record := Record{
-		ID:          "id1",
+		Currency:    "",
 		Description: util.ToPointer(""),
 	}
 
@@ -41,7 +41,7 @@ func Test_Omitempty_Empty(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	expected := `{"id":"id1","amount":"0","currency":"","description":""}`
+	expected := `{"id":"","amount":"0","description":"","label":null}`
 	actual := string(marshaled)
 
 	if actual != expected {
@@ -62,7 +62,7 @@ func Test_NoOmitempty_Nil(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	expected := `{"id":"id1","amount":"0","currency":"","label":null}`
+	expected := `{"id":"id1","amount":"0","label":null}`
 	actual := string(marshaled)
 
 	if actual != expected {
@@ -83,7 +83,7 @@ func Test_NoOmitempty_Empty(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	expected := `{"id":"id1","amount":"0","currency":"","label":""}`
+	expected := `{"id":"id1","amount":"0","label":""}`
 	actual := string(marshaled)
 
 	if actual != expected {

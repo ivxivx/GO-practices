@@ -12,7 +12,7 @@ import (
 type Record struct {
 	ID          string          `json:"id"`
 	Amount      decimal.Decimal `json:"amount"`
-	Currency    string          `json:"currency"`
+	Currency    string          `json:"currency,omitempty"`
 	Description *string         `json:"description,omitempty"`
 	Label       *string         `json:"label"`
 }
