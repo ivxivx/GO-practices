@@ -3,7 +3,7 @@ package json
 import (
 	"testing"
 
-	"github.com/goccy/go-json"
+	gj "github.com/goccy/go-json"
 	"github.com/ivxivx/go-practices/util"
 )
 
@@ -15,7 +15,7 @@ func Test_Omitempty_Nil(t *testing.T) {
 		Description: nil,
 	}
 
-	marshaled, err := json.Marshal(record)
+	marshaled, err := gj.Marshal(record)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -36,7 +36,7 @@ func Test_Omitempty_Empty(t *testing.T) {
 		Description: util.ToPointer(""),
 	}
 
-	marshaled, err := json.Marshal(record)
+	marshaled, err := gj.Marshal(record)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -57,7 +57,7 @@ func Test_NoOmitempty_Nil(t *testing.T) {
 		Label: nil,
 	}
 
-	marshaled, err := json.Marshal(record)
+	marshaled, err := gj.Marshal(record)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -78,7 +78,7 @@ func Test_NoOmitempty_Empty(t *testing.T) {
 		Label: util.ToPointer(""),
 	}
 
-	marshaled, err := json.Marshal(record)
+	marshaled, err := gj.Marshal(record)
 	if err != nil {
 		t.Fatal(err)
 	}
